@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<!-- mapper -> sql문 본체 관리 -->
+<!-- 코드의 재사용을 위해서 mapper를 재생시켰음 -->
+<!-- namespace로 큰 단위를 잡고 id를 잡고 crud(select)를 잡는다 -->
+<!-- 재사용과 협업을 위해서 mapper 사용하였다 -->
+<mapper namespace="IntroduceSql">   
+    <select id="interview">
+        select
+            key_id 
+            ,    cyh_subject
+            ,    cyh_content
+        from cyh_preinterview.cyh_interview_new 
+    </select>
+    <select id="portfolio">
+        select
+            key_id
+            ,    cyh_category 
+            ,    cyh_subject
+            ,    cyh_content
+            ,    cyh_imgSrc
+            ,    cyh_imgWidth
+            ,    cyh_imgHeight
+        from cyh_preinterview.cyh_portfolio_new 
+    </select>
+</mapper>
+
+
+
