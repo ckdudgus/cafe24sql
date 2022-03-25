@@ -1,30 +1,27 @@
 var express = require('express');
 var router = express.Router();
 
+var normalpage = require('../routes/normal')
+var awssql = require('./awssqls')
+
 router.use(express.urlencoded({ extended : true}))
 // 리액트에서 비동기로 요청시
 router.get('/' , (req , res , next) => {
     var sqlsideis = req.query.type; 
     if(sqlsideis == 'aws'){
-    // localhost:3000/cyhpreinterview?type=aws
-        var mysql = require('mysql');
-        var dbconfig = require('../db/config.js');
-        var pool = mysql.createPool(dbconfig);
+        // localhost:3000/cyhpreinterview?type=aws
+        req.body.mapper = "IntroduceSql" // mapper namespace로 선정
+        req.body.crud = "select" // slect , insert , delete , update
+        req.body.mapper_id = "interview" //  sql문 정보를 담고있는 객체의 id
 
-        pool.getConnection(function(err , connection) {    
-            connection.query(
-                query,
-                (error , result) => {
-                    if(error) throw error;
-                    console.log(result);
-                    res.send(result);
-                })
-            connection.release(); // 추가 구절
-        })
+        router.use('/' , awssql)
+        next('route') 
 
     }else{ // 평범한 라우팅은 이쪽으로 오시오.
-
+        // localhost:3000/cyhpreinterview/write
+        // localhost:3000/cyhpreinterview
+        router.use('/' , normalpage)
+        next('route')    
     }
-    
 })
 module.exports = router;
