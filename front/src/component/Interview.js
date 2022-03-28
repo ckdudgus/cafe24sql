@@ -6,7 +6,7 @@ const Interview = (props) => {
     const [typeData , insertDB] = useState(0);
 
     const interviewDataSetting = async () => {
-                            await axios.get(`/cyhpreinterview?botable=${props.botable}`)
+                            await axios.get(`/cyhpreinterview?type=${props.botable}`)
                                        .then(
                                            (result) => {
                                                try{
@@ -30,7 +30,7 @@ const Interview = (props) => {
                 interviewId.map(( contant,i) => {
                     return(
                         <li>
-                            <h3>{i+1} { contant.subject}</h3><div>{contant.content}</div>
+                            <h3>{i+1} { contant.cyh_subject}</h3><div>{contant.cyh_content}</div>
                         </li>
                     )
                 })
