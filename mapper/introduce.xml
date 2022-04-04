@@ -1,20 +1,71 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-
-<!-- mapper -> sql문 본체 관리 -->
-<!-- 코드의 재사용을 위해서 mapper를 재생시켰음 -->
-<!-- namespace로 큰 단위를 잡고 id를 잡고 crud(select)를 잡는다 -->
-<!-- 재사용과 협업을 위해서 mapper 사용하였다 -->
 <mapper namespace="IntroduceSql">   
     <select id="interview">
         select
-            key_id 
-            ,    cyh_subject
-            ,    cyh_content
-        from cyh_preinterview.cyh_interview_new 
+            wr_id 
+            ,    wr_subject
+            ,    wr_content
+        from ys5328.g5_write_product
     </select>
-    <select id="portfolio">
+
+     <insert id="interviewwrite">
+        insert into 
+            cyh_preinterview.cyh_interview_new(
+                cyh_subject
+                , cyh_content
+            )
+            values(
+                '제목자리'
+                , '내용자리'
+            );
+    </insert>
+
+    <!-- <update id = "interviewModify">
+
+    
+    </update> -->
+    
+   
+
+    <!-- <select id="contact">
+        select
+            *
+        from cyh_preinterview.cyh_contact_new
+    </select> -->
+
+   
+
+    <select id="meetingArrange">
+        select
+            *
+        from cyh_preinterview.cyh_meetingArrange_new
+    </select>
+    
+    <insert id="meetingArrangeInsert">
+        insert into 
+            cyh_preinterview.cyh_review_new(
+                cyh_subject
+                , cyh_content
+                <if text = " nameimgSrc != '' && nameimgSrc != null ">
+                , cyh_imgSrc
+                , cyh_imgidentity
+                <if>
+                , cyh_data
+            )
+            values(
+                '제목자리'
+                , '내용자리'
+                <if text = " nameimgSrc != '' && nameimgSrc != null ">
+                , #{nameimgSrc}
+                , #{nameimgidentity}
+                </if>
+                , '개발코드'
+            );
+    </insert>
+
+     <select id="portfolio">
         select
             key_id
             ,    cyh_category 
@@ -26,6 +77,3 @@
         from cyh_preinterview.cyh_portfolio_new 
     </select>
 </mapper>
-
-
-
