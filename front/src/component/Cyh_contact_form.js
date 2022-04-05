@@ -3,52 +3,70 @@ import axios from 'axios';
 import $ from 'jquery';
 
 export default function Cyh_interview_new(props) {
-    const submitClick = (type, e) => {
-        const  fnValidate = (e) =>{
-                if(!$('#agreeTerm').is(':checked')){   
-                    alert("동의하시게나");
-                    $('label[for="agreeTerm"]').addClass('notice');                 
-                    return false;
-                }else{
+const submitClick = (type, e) => { 
+    // 이 안에 비동기식 있겠구나 , 첫번째 인자 : xml까지 -> sql 선택의 key
+    // 두번재 인자는 마우스 피드백
+    // 이벤트 리스너 -> 함수 저장 -> 객체의 이벤트에 저장
+    // function ccc (){
 
-                    return true;
-                }
-                        
-              }
-          var time = new Date(); 
-         
-          if(fnValidate()){ // 동의했기때문에 데이터 모아서 이제 비동기로 노드한테 보내야겟다
-           
-            var  jsonstr = decodeURIComponent($("[name='"+props.botable+"']").serialize());           
-            var  json_form = JSON.stringify(jsonstr).replace(/\&/g, '\",\"') 
-            json_form = "{\""+ json_form.replace(/=/gi, '\":\"') + "\"}" 
-            
-            try{
-                axios({
-                    url :`/cyhpreinterview?type=${props.botable}`,
-                    header:{
-                        "Content-Type" : 'application/json',
-                    },
-                    method :"POST",
-                    body : json_form
-                })
-                .then(
-                    (result) => {
+    // }
+    // button.onClick = function(e){ ccc('값') }
+    // <buttton onClick = { e=>{ ccc() } }>
+    // <button onClick = {ccc}>
 
-                        // select 전용
-                        try{
-                            console.log(result)
-                        }
-                        catch(err){ console.log("reult 타입 확인할 것 : " + err.message + " / " + typeof result) }  // result가 들어왔는데 try처럼 안왔을때 에러 발생
+    const  fnValidate = (e) =>{ // 유효성 검사
+            if(!$('#agreeTerm').is(':checked')){   
+                alert("동의하시게나");
+                $('label[for="agreeTerm"]').addClass('notice');                 
+                return false;
+            }
+            // if(){
+            //     return false;
+            // }
+            return true; // 제일 아래에 있어야한다.  
+                    
+            }
+        var time = new Date(); 
+        
+        if(fnValidate()){ // 동의했기때문에 데이터 모아서 이제 비동기로 노드한테 보내야겟다
+        
+        // 폼필드에 내가 원하는댈 사용자가 데이터를 삽입했음 
+        var  jsonstr = decodeURIComponent($("[name='"+props.botable+"']").serialize());           
+        var  json_form = JSON.stringify(jsonstr).replace(/\&/g, '\",\"') 
+        json_form = "{\""+ json_form.replace(/=/gi, '\":\"') + "\"}"
+        // json화시킴 -> 노드
+        
+        // 노드 -> xml - sql
+        try{
+            axios({
+                url :`/cyhpreinterview?type=${props.botable}`, // 요청 req.body -> 응답 res.send
+                header:{
+                    "Content-Type" : 'application/json',
+                },
+                method :"POST",
+                body : json_form
+            })
+            .then(
+                (result) => {
+
+                    // select 전용
+                    try{
+                        console.log(result)
+
+                        // if(){
+                        //     alert("인터뷰가 등록되었습니다")
+                        // }
                     }
-                )
-            }
-            catch(err){
-                console.log(" 서버통신 문제가 있네 좀있다가 다시 시도해: "+err)
-            }
-          }
-           // e.preventDefault();       
-    }
+                    catch(err){ console.log("reult 타입 확인할 것 : " + err.message + " / " + typeof result) }  // result가 들어왔는데 try처럼 안왔을때 에러 발생
+                }
+            )
+        }
+        catch(err){
+            console.log(" 서버통신 문제가 있네 좀있다가 다시 시도해: "+err)
+        }
+        }
+        // e.preventDefault();       
+}
   return (
     <div id='formcon'>
          <h2>{ props.titlenm }</h2>
