@@ -6,7 +6,7 @@ class Navi extends Component {
       <nav class="navbar navbar-expand-lg navbar-light bg-light" id='nav'>
         <div class="container-fluid">
           <div class="firsta col-6">
-            <a class="navbar-brand " href="#">YoungPortfolio</a>
+            <a class="navbar-brand "><img className='mainimg' alt='imgmain' src='img/head_img_main.svg'></img></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>

@@ -31,5 +31,116 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <div id="contacttitle">
+      <h><strong>Contact Me</strong></h>
+  </div>
+  <div id="subtitle">
+      <h>for the culture not for benefit</h>
+  </div>
+  <div id="formmain">
+      <div id="contactimg">
+          <img src="./img/Untitled-1.jpg" alt="www" class="imgmain">
+      </div>
+      <form action="http://www.naver.com"  onsubmit="return forminspector(this)" method="post" name="contactform" id="contactform">
+              <ul>
+                  <li class="labeltext">
+                      <label for="companynm" class="first_label">회사명</label>
+                      <input id="companynm" type="text" name="companynm">
+                  </li>
+                  <li class="labeltext">
+                      <label for="contactph" class="first_label">담당자 연락처</label>
+                      <input id="phonenumber" type="text" name="phonenumber"  placeholder="010-0000-0000">
+                  </li>               
+                  <li class="potext">
+                      <div class="title"><strong>포지션</strong><span>(하나만 선택해주세요)</span></div>
+                      <ul class="position">
+                          <li>
+                              <input type="radio" name="position" id="position1">
+                              <label for="position1">프론트엔드</label>
+                          </li>
+                          <li>
+                              <input type="radio" name="position" id="position2">
+                              <label for="position2">웹퍼블리셔</label>
+                          </li>
+                          <li>
+                              <input type="radio" name="position" id="position3">
+                              <label for="position3">백엔드</label>
+                          </li>
+                          <li>
+                              <input type="radio" name="position" id="position4">
+                              <label for="position4">기획자</label>
+                          </li>
+                      </ul>
+                  </li>
+                  <!-- <li>
+                      <div class="query_box">                        	
+                          <div class="query_tit">
+                              <span class="query_sub_tit">02. Project</span>
+                              <p class="query_main_tit"><span>우리와 함께 할 프로젝트 유형에 <b class="nece">관해 이야기 해주세요.</b></span><strong>(중복선택 가능)</strong></p>
+                          </div>
+                          <div class="query_list project_check q_check">
+                              <ul>
+                                  <li class="">
+                                      <label><input type="checkbox" name="project_type" value="01">신규 구축</label>
+                                  </li>
+                                  <li class="">
+                                      <label><input type="checkbox" name="project_type" value="02">리뉴얼</label>
+                                  </li>
+                                  <li class="">
+                                      <label><input type="checkbox" name="project_type" value="03">유지보수</label>
+                                  </li>
+                                  <li>
+                                      <label><input type="checkbox" name="project_type" value="04">기타</label>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </li> -->
+                  <li class="hopetext">
+                  <div class="title"><strong>희망업무 능력순위</strong><span>(포지션이 퍼블리셔인 경우에만 포함됨)</span></div>
+                      <ul class="hopeability">
+                          <li>
+                              <input type="text" maxlength="5" size="1"name="ability[0]" id="ability1">
+                              <label for="ability1">html/css</label>
+                          </li>
+                          <li>
+                              <input type="text" maxlength="5" size="1" name="ability[1]" id="ability2">
+                              <label for="ability2">jQuery</label>
+                          </li>
+                          <li>
+                              <input type="text" maxlength="5" size="1" name="ability[2]" id="ability3">
+                              <label for="ability3">Node&mySql</label>
+                          </li>
+                          <li>
+                              <input type="text" maxlength="5" size="1" name="ability[3]" id="ability4">
+                              <label for="ability4">React</label>
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                  <label for="etc">추가메세지</label>
+                      <textarea name="etc" id="etc" cols="30" rows="10"></textarea>    
+                  </li>
+                  <!-- <li class="labeltext">
+                      <label for="addtext" class="first_label">추가메세지</label>
+                      <input id="addtext" type="text" name="addtext">
+                  </li> -->
+                  <li  class="Agreetext">
+                      <label class="checkbox" for="allCheck">
+                          <input type="checkbox" name="agree" class="checkAll" data-group="cg1" id="allCheck">
+                          <i></i>
+                          <span>개인정보 수집이용 동의</span>
+                      </label>
+                  </li>
+                  <!-- <li id="agreetext" class=" border0 agree">
+                      <input type="checkbox" name="agree" id="agree">
+                      <label for="agree"><span>개인정보정책</span></label>
+                  </li> -->
+              </ul>
+              <div class="form-submit-btn">
+                  <input class="submit" type="submit" value="제안하기">
+              </div>
+      </form>
+  </div>
   </body>
 </html>
