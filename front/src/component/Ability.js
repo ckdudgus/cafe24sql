@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class Swiper extends Component {
+class Ability extends Component {
     render() {
         return (
-            <div>
+            <div className=''>
                 
             </div>
         );
     }
 }
 
-export default Swiper;
+export default Ability;

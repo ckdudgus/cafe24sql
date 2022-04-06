@@ -4,10 +4,10 @@
 <mapper namespace="IntroduceSql">   
     <select id="interview">
         select
-            wr_id 
-            ,    wr_subject
-            ,    wr_content
-        from ys5328.g5_write_product
+            key_id 
+            ,    cyh_subject
+            ,    cyh_content
+        from cyh_preinterview.cyh_interview_new
     </select>
 
      <insert id="interviewwrite">
@@ -29,7 +29,7 @@
     
    
 
-    <!-- <select id="contact">
+    <!-- <select id="contact">`
         select
             *
         from cyh_preinterview.cyh_contact_new

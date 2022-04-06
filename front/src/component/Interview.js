@@ -19,11 +19,8 @@ const Interview = (props) => {
 
                     // select 전용
                     try{
-                        console.log( result.data[0].wr_subject)
-                        console.log(result.data[ result.data.length - 1 ].wr_id)
-                        // console.log(result)
-                        // interviewIDUpdate([...result.data]);
-                        insertDB(result.data[ result.data.length -1].wr_id);
+                        interviewIDUpdate([...result.data])
+                        insertDB(result.data[ result.data.length -1].key_id);
                     }
                     catch(err){ console.log("reult 타입 확인할 것 : " + err.message + " / " + typeof result) }  // result가 들어왔는데 try처럼 안왔을때 에러 발생
                 }
@@ -63,8 +60,8 @@ const Interview = (props) => {
         {
             interviewId.map((contant,i) => {
                 return(
-                    <li key={contant.wr_id}>
-                        <h3>{i+1} { contant.wr_subject }</h3><div>{ contant.wr_content }</div>
+                    <li key={contant.key_id}>
+                        <h3>{i+1} { contant.cyh_subject }</h3><div>{ contant.cyh_content }</div>
                     </li>
                 )
             })

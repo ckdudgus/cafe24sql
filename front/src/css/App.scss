@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'GmarketSansLight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}  
+
+#formcon{
+  border: 4px solid #222;
+}
+#formin{
+  border: 4px solid #222;
+  margin-bottom: 50px;
+}
+body{
+  font-family: 'GmarketSansLight';
+  #nav{
+    .firsta{
+      a{
+        font-size: 35px;
+      }
+    }
+    .remaina{
+      justify-content: end !important;
+      a{
+        font-size: 15px;
+        padding-left: 5rem;
+      }
+      a:hover{
+        color: red;
+      }   
+    }
+  }
+}

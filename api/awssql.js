@@ -1,7 +1,7 @@
 var express = require('express');
 var mysql = require('mysql');
 var mybatisMapper = require('mybatis-mapper')
-var dbconfig = require('../db/cafe24.js');
+var dbconfig = require('../db/dbconfig');
 
 var router = express.Router();
 var pool = mysql.createPool(dbconfig);
@@ -24,7 +24,7 @@ router.post('/' , (req , res) => {
 
     pool.getConnection(function(err , connection) {    
 
-        if(err) console.log("DB접속불가 : "+err);
+        if(err) console.log("DB접속불가 config.js 확인바람 : "+err);
 
         connection.query(
             query, // 이거는 반드시 sql문이 들어와야 에러가 안남
