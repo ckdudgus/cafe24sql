@@ -1,0 +1,16 @@
+/*fonts*/
+/* Hangeul Maruburi Font */
+@font-face {
+    font-family: 'NanumSquare';
+    src: url(../fonts/nanum-square/NanumSquareR.eot);
+    src: url(../fonts/nanum-square/NanumSquareR.eot?#iefix) format("embedded-opentype"), 
+         url(../fonts/nanum-square/NanumSquareR.woff) format("woff"), 
+         url(../fonts/nanum-square/NanumSquareR.ttf) format("truetype");
+}
+
+/* Noto Sans Korean */
+@font-face {
+  font-family: 'Do Hyeon', sans-serif;
+    font-weight: bold;
+    src: url(../fonts/DoHyeon-Regular.woff) format("woff"),
+}

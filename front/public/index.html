@@ -3,26 +3,37 @@
   <head>
     <meta charset="utf-8" />
 
-    <!-- 구글애널리틱스 -->
+    <!-- 파비콘 -->
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+
+    <!-- 구글애널리틱스 -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
 
     <!-- seo최적화 -->
-    <meta name="description" content="구글, 페이스북 등 전 세계 파트너와 협력하여 75억 소비자를 만나는 글로벌 전자상거래 플랫폼 카페24입니다." />
-    <link rel="canonical" href="https://www.cafe24.com/" /> 
+    <meta name="description" content="차영현의 성격을 알 수 있는 포트폴리오." />
     <meta property="og:locale" content="ko_KR" />
-    <meta property="og:site_name" content="카페24" />
-    <meta property="og:url" content="https://www.cafe24.com"/>
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="카페24" />
-    <meta property="og:description" content="구글, 페이스북 등 전 세계 파트너와 협력하여 75억 소비자를 만나는 글로벌 전자상거래 플랫폼 카페24입니다." />
-    <meta property="og:image" content="https://www.cafe24.com/wp-content/uploads/2020/10/cafe24-og-img.jpg" />
-
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <meta property="og:type" content="productsite" />
+    <meta property="og:title" content="웹퍼블리셔｜차영현｜포트폴리오" />
+    <meta property="og:site_name" content="웹퍼블리셔_차영현" />
+    <meta property="og:url" content="//dabooom93.cafe24.com" />
+    <meta property="og:image" content="/img/ogimg.jpg" />
+    <meta property="og:product_des" content="웹퍼블리셔_차영현" />
     
+
+    <!-- 바로가기 icon -->
+    <link rel="shortcut icon" href="/da0_port/img/favicon.ico" />
+    <link rel="apple-touch-icon" href="/da0_port/img/apple_icon.png" />
+    <meta name="da0_application-TileImage" content="//dabooom93.cafe24.com/da0_port/img/apple_icon.png" size="270x270" />
+    
+    <!-- 폰트 -->
+    <link href="%PUBLIC_URL%/css/fonts.css" rel="stylesheet">
+
     <!-- 부트스트랩 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- 나만의css -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/App.min.css">
 
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>React App</title>
@@ -31,116 +42,5 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <div id="contacttitle">
-      <h><strong>Contact Me</strong></h>
-  </div>
-  <div id="subtitle">
-      <h>for the culture not for benefit</h>
-  </div>
-  <div id="formmain">
-      <div id="contactimg">
-          <img src="./img/Untitled-1.jpg" alt="www" class="imgmain">
-      </div>
-      <form action="http://www.naver.com"  onsubmit="return forminspector(this)" method="post" name="contactform" id="contactform">
-              <ul>
-                  <li class="labeltext">
-                      <label for="companynm" class="first_label">회사명</label>
-                      <input id="companynm" type="text" name="companynm">
-                  </li>
-                  <li class="labeltext">
-                      <label for="contactph" class="first_label">담당자 연락처</label>
-                      <input id="phonenumber" type="text" name="phonenumber"  placeholder="010-0000-0000">
-                  </li>               
-                  <li class="potext">
-                      <div class="title"><strong>포지션</strong><span>(하나만 선택해주세요)</span></div>
-                      <ul class="position">
-                          <li>
-                              <input type="radio" name="position" id="position1">
-                              <label for="position1">프론트엔드</label>
-                          </li>
-                          <li>
-                              <input type="radio" name="position" id="position2">
-                              <label for="position2">웹퍼블리셔</label>
-                          </li>
-                          <li>
-                              <input type="radio" name="position" id="position3">
-                              <label for="position3">백엔드</label>
-                          </li>
-                          <li>
-                              <input type="radio" name="position" id="position4">
-                              <label for="position4">기획자</label>
-                          </li>
-                      </ul>
-                  </li>
-                  <!-- <li>
-                      <div class="query_box">                        	
-                          <div class="query_tit">
-                              <span class="query_sub_tit">02. Project</span>
-                              <p class="query_main_tit"><span>우리와 함께 할 프로젝트 유형에 <b class="nece">관해 이야기 해주세요.</b></span><strong>(중복선택 가능)</strong></p>
-                          </div>
-                          <div class="query_list project_check q_check">
-                              <ul>
-                                  <li class="">
-                                      <label><input type="checkbox" name="project_type" value="01">신규 구축</label>
-                                  </li>
-                                  <li class="">
-                                      <label><input type="checkbox" name="project_type" value="02">리뉴얼</label>
-                                  </li>
-                                  <li class="">
-                                      <label><input type="checkbox" name="project_type" value="03">유지보수</label>
-                                  </li>
-                                  <li>
-                                      <label><input type="checkbox" name="project_type" value="04">기타</label>
-                                  </li>
-                              </ul>
-                          </div>
-                      </div>
-                  </li> -->
-                  <li class="hopetext">
-                  <div class="title"><strong>희망업무 능력순위</strong><span>(포지션이 퍼블리셔인 경우에만 포함됨)</span></div>
-                      <ul class="hopeability">
-                          <li>
-                              <input type="text" maxlength="5" size="1"name="ability[0]" id="ability1">
-                              <label for="ability1">html/css</label>
-                          </li>
-                          <li>
-                              <input type="text" maxlength="5" size="1" name="ability[1]" id="ability2">
-                              <label for="ability2">jQuery</label>
-                          </li>
-                          <li>
-                              <input type="text" maxlength="5" size="1" name="ability[2]" id="ability3">
-                              <label for="ability3">Node&mySql</label>
-                          </li>
-                          <li>
-                              <input type="text" maxlength="5" size="1" name="ability[3]" id="ability4">
-                              <label for="ability4">React</label>
-                          </li>
-                      </ul>
-                  </li>
-                  <li>
-                  <label for="etc">추가메세지</label>
-                      <textarea name="etc" id="etc" cols="30" rows="10"></textarea>    
-                  </li>
-                  <!-- <li class="labeltext">
-                      <label for="addtext" class="first_label">추가메세지</label>
-                      <input id="addtext" type="text" name="addtext">
-                  </li> -->
-                  <li  class="Agreetext">
-                      <label class="checkbox" for="allCheck">
-                          <input type="checkbox" name="agree" class="checkAll" data-group="cg1" id="allCheck">
-                          <i></i>
-                          <span>개인정보 수집이용 동의</span>
-                      </label>
-                  </li>
-                  <!-- <li id="agreetext" class=" border0 agree">
-                      <input type="checkbox" name="agree" id="agree">
-                      <label for="agree"><span>개인정보정책</span></label>
-                  </li> -->
-              </ul>
-              <div class="form-submit-btn">
-                  <input class="submit" type="submit" value="제안하기">
-              </div>
-      </form>
-  </div>
   </body>
 </html>
