@@ -7,6 +7,7 @@
 import Navibar from './component/Navibar';
 import Navi from './component/Navi';
 import Portfolio from './component/Portfolio'
+import Ability from './component/Ability';
 // import Header from './component/Header';
 // import Ability from './component/Ability'
 // import Cyh_interview_new from './component/Interview';
@@ -22,6 +23,7 @@ function App() {
     <Navibar></Navibar>
     <Navi styletype='d1'></Navi>
     <Portfolio></Portfolio>
+    <Ability></Ability>
     {/* <Cyh_interview_new botable='interviewlist' titlenm='사전인터뷰'></Cyh_interview_new>
     <Cyh_contact_from botable='interviewwrite' titlenm='면접제안'></Cyh_contact_from> */}
 

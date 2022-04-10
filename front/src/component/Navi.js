@@ -13,15 +13,15 @@ class Navi extends Component {
           <div class="collapse navbar-collapse remaina col-6" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item navi1">
-                <a class="nav-link active" aria-current="page" href="#">소개</a>
+                <a class="nav-link active" aria-current="page" href="https://www.github.com" >소개</a>
                 <span></span>
               </li>
               <li class="nav-item navi2">
-                <a class="nav-link active" href="#">인터뷰</a>
+                <a class="nav-link active" href="https://www.github.com" >인터뷰</a>
                 <span></span>
               </li>
               <li class="nav-item navi3">
-                <a class="nav-link active" href="#">사전면접</a>
+                <a class="nav-link active" href="https://www.github.com" >면접제안</a>
                 <span></span>
               </li>
             </ul>

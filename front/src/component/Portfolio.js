@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 class Portfolio extends Component {
     render() {
         return (
-            <div className='portfolio'>
+            <div id='portfolio'>
                 <div class="pofol1">
                     <li>					
                         <div class="masonry-li-my">
                             <strong>부트스트랩</strong>
                         </div>						
-                        <a href="sub_02_3_view.html"><a href=""/>		
+                        <a href="#"><img class="bootstrap" src='img/bootstrap-logo.svg'></img><a href=""/>		
                             <div class="masonry-li-cover"><i class="xi-plus-thin"></i></div>
                             <div class="masonry-li-txt">
                                 <div class="masonry-txt-top">
@@ -32,7 +32,7 @@ class Portfolio extends Component {
                         <div class="masonry-li-my">
                             <strong>부트스트랩</strong>
                         </div>						
-                        <a href="sub_02_3_view.html"><a href=""/>		
+                        <a href="#"><a href=""/>		
                             <div class="masonry-li-cover"><i class="xi-plus-thin"></i></div>
                             <div class="masonry-li-txt">
                                 <div class="masonry-txt-top">
@@ -56,7 +56,7 @@ class Portfolio extends Component {
                         <div class="masonry-li-my">
                             <strong>부트스트랩</strong>
                         </div>						
-                        <a href="sub_02_3_view.html"><a href=""/>		
+                        <a href="#"><a href=""/>		
                             <div class="masonry-li-cover"><i class="xi-plus-thin"></i></div>
                             <div class="masonry-li-txt">
                                 <div class="masonry-txt-top">
@@ -80,7 +80,7 @@ class Portfolio extends Component {
                         <div class="masonry-li-my">
                             <strong>부트스트랩</strong>
                         </div>						
-                        <a href="sub_02_3_view.html"><a href=""/>		
+                        <a href="#"><a href=""/>		
                             <div class="masonry-li-cover"><i class="xi-plus-thin"></i></div>
                             <div class="masonry-li-txt">
                                 <div class="masonry-txt-top">
@@ -104,7 +104,7 @@ class Portfolio extends Component {
                         <div class="masonry-li-my">
                             <strong>부트스트랩</strong>
                         </div>						
-                        <a href="sub_02_3_view.html"><a href=""/>		
+                        <a href="#"><a href=""/>		
                             <div class="masonry-li-cover"><i class="xi-plus-thin"></i></div>
                             <div class="masonry-li-txt">
                                 <div class="masonry-txt-top">
@@ -128,7 +128,7 @@ class Portfolio extends Component {
                         <div class="masonry-li-my">
                             <strong>부트스트랩</strong>
                         </div>						
-                        <a href="sub_02_3_view.html"><a href=""/>		
+                        <a href="#"><a href=""/>		
                             <div class="masonry-li-cover"><i class="xi-plus-thin"></i></div>
                             <div class="masonry-li-txt">
                                 <div class="masonry-txt-top">
@@ -152,7 +152,7 @@ class Portfolio extends Component {
                         <div class="masonry-li-my">
                             <strong>부트스트랩</strong>
                         </div>						
-                        <a href="sub_02_3_view.html"><a href=""/>		
+                        <a href="#"><a href=""/>		
                             <div class="masonry-li-cover"><i class="xi-plus-thin"></i></div>
                             <div class="masonry-li-txt">
                                 <div class="masonry-txt-top">
@@ -176,7 +176,7 @@ class Portfolio extends Component {
                         <div class="masonry-li-my">
                             <strong>부트스트랩</strong>
                         </div>						
-                        <a href="sub_02_3_view.html"><a href=""/>		
+                        <a href="#"><a href=""/>		
                             <div class="masonry-li-cover"><i class="xi-plus-thin"></i></div>
                             <div class="masonry-li-txt">
                                 <div class="masonry-txt-top">
