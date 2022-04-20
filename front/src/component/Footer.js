@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 class Footer extends Component {
     render() {
         return (
-            <div className='footer'>
+            <div className='footer col-12 col-md-12 col-lg-3'>
                 <div>
-                    <p>© 2021. Cyh Young Hyun. All rights reserved.</p>
+                    <p>© 2022. Cyh Young Hyun. All rights reserved.</p>
                 </div>
             </div>
         );
