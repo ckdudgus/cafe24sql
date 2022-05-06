@@ -19,10 +19,8 @@ function App() {
     <div className='App'>
     <Navi></Navi>
     <Portfolio></Portfolio>
-    
     <Contact></Contact>
     <Footer ></Footer>   
-    {/* Footer -> 실행문 familiy -> 매개인자  */}
     <Quick></Quick>
     </div>
   );

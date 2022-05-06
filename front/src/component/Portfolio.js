@@ -40,36 +40,11 @@ class Portfolio extends Component {
                 <div id="container">
                     <div className='row cyhpofol'>
                         <div className="mainpo col-12 col-md-12 col-lg-3" >
-                            <div className="grid row-6"  >
-                                <div className="grid-item1" >										
-                                    <div className="bootstrap  d-flex ">
-                                        <div className="bootlogo"></div>
-                                        <div className='bootspan'>
-                                            <span>부트스트랩_바디프랜드</span>
-                                        </div>
-                                    </div>
-                                    <div className="content">
-                                        <div className='bodyfriend' alt='바디프랜드' />
-                                    </div>
-                                    <h1 className="hashtag">
-                                        <span>#부트스트랩</span><span>#반응형웹</span><span>그누보드 연동</span>
-                                    </h1>
-                                    <div className="sitebt">
-                                        <a href='https://ys5328.cafe24.com/bodyfriend' target="_blank">사이트 보러가기</a>
-                                    </div>
-                                    <div className="grid1img">
-                                        <img src='img/grid1img.jpg' alt=''/>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="mainpo col-12 col-md-12 col-lg-3" >
-                            <div className='grid row-6' >
+                            <div className="grid row-6"  > 									
                                 <div class="grid-item2 " >										
                                     <h1 className="hashtag">
                                         <div className='cafe24img' />
-                                        <span>#Cafe24hosting</span>
+                                        <span>Cafe24hosting</span>
                                     </h1>
                                     <div className="content">
                                         <img className='cafeimg' src='img/cafeimg.jpg' alt='바디프랜드' />
@@ -78,15 +53,41 @@ class Portfolio extends Component {
                                     <div className="sitebt2">
                                         <a href='https://ksh2012129.cafe24.com' target="_blank">사이트 보러가기</a>
                                     </div>
+                                    <div className="grid1img">
+                                        <img className='img-fluid' src='img/grid1img.jpg' alt=''/>
+                                    </div>
                                 </div>
+                            </div>
+                        </div>
+
+                        <div className="mainpo col-12 col-md-12 col-lg-3" >
+                            <div className='grid row-6' >
+                                <div className="grid-item1" >	
+                                    <div className="bootstrap  d-flex ">
+                                        <div className="bootlogo"></div>
+                                        <div className='sir' alt='그누보드'></div>
+                                        <div className='bootspan'>
+                                            <span>부트스트랩_바디프랜드</span>
+                                        </div>
+                                    </div>
+                                    <div className="content">
+                                        <div className='bodyfriend' alt='바디프랜드' />
+                                    </div>
+                                    <h1 className="hashtag">
+                                        <span className='gnuboard'>#부트스트랩</span><span>#반응형웹</span><span>그누보드 연동</span>
+                                    </h1>
+                                    <div className="sitebt">
+                                        <a href='https://ys5328.cafe24.com/bodyfriend' target="_blank">사이트 보러가기</a>
+                                    </div>
+                                </div>    
                             </div>
                             <div className='gridmy row-6' >
                                 <div className="grid-item3 " >										
                                     <h1 className="hashtag">
-                                        <span>#부트스트랩</span><span>#반응형웹 </span><span>그누보드 연동</span>
+                                        <span>반응형 웹앱 페이지</span>
                                     </h1>
                                     <div className="content">
-                                        <img src='' alt='바디프랜드' />
+                                        <img className='img-fluid' src='img/publishe.png' alt='' />
                                     </div>
                                 </div>
                             </div>
@@ -171,7 +172,7 @@ class Portfolio extends Component {
                                                         </span>
                                                     </div>
                                                     <div className='resume'>
-                                                        <a href="#">
+                                                        <a href="https://www.saramin.co.kr/zf_user/member/resume/view/edit_icon_fl/y/res_idx/20577940/mandb_view/n" target='_blank'>
                                                         <img className='resumeimg' src='/img/resume1.png' alt='이력서'></img>                                                    
                                                         </a>
                                                     </div>

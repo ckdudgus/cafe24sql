@@ -4,11 +4,11 @@ class Ability extends Component {
     render() {
         return (
             <section id="myability">
-                <div class="contanier">
-                    <div class="mainab col-4">
-                        <img class="abimg" src="img/abilityimg.jpg" alt="스킬이미지"></img>
+                <div className="contanier">
+                    <div className="mainab col-4">
+                        <img className="abimg" src="img/abilityimg.jpg" alt="스킬이미지"></img>
                     </div>
-                    <div class="suvab col-8">
+                    <div className="suvab col-8">
                         <h3><strong>새로운 도전을 무서워하지 않는</strong></h3>
                     </div>
                     {/* <div class="diagram">

@@ -65,8 +65,19 @@ body {
   position: absolute;
 }
 
+.bootstrap .sir {
+  background-image: url(/img/sir.png);
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  top: -78px;
+  position: absolute;
+  margin-left: 5.5rem;
+}
+
 .bootstrap .bootspan {
   top: -70px;
+  margin: 0 auto;
 }
 
 .content .bodyfriend {
@@ -111,6 +122,7 @@ body {
 #quick ul {
   width: 135px;
   margin-bottom: 30px;
+  margin-right: 10px;
 }
 
 #quick img {
@@ -163,11 +175,16 @@ body {
   padding: 15px;
 }
 
+.grid-item1 .hashtag span {
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+
 .grid-item2 {
   background-color: white;
   border: 2px solid #222;
   border-radius: 28px;
-  height: 250px;
+  height: 465px;
   width: 350px;
   box-shadow: 1px 5px 5px #8d8d8d;
   padding: 10px;
@@ -207,7 +224,7 @@ body {
 }
 
 .grid1img {
-  margin-top: 18px;
+  margin-top: 35px;
 }
 
 .grid1img img {
@@ -284,6 +301,11 @@ span {
   text-align: center;
 }
 
+.hashtag span {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
 .hashtag1 {
   display: flex;
   justify-content: center;
@@ -302,7 +324,6 @@ span {
 
 h2 {
   font-size: 19px;
-  font-weight: bold;
   line-height: 2;
 }
 
@@ -369,10 +390,6 @@ h2 {
   height: 100%;
 }
 
-#portfolio #modalbox .modal .modal-dialog .modal-content {
-  height: 90%;
-}
-
 #portfolio #modalbox .modal .modal-dialog .modal-content .btn-close {
   width: 1rem;
   border: 2px solid;
@@ -436,7 +453,7 @@ h2 {
   display: flex;
   justify-content: end;
   padding-right: 7.1rem;
-  margin-top: -5px;
+  margin-top: -15px;
   font-size: 25px;
   color: #d23f11;
 }
