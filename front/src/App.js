@@ -1,5 +1,3 @@
-
-
 // import { Route, Routes } from 'react-router-dom';
 // import InterviewList from './component/InterviewList';
 // import InterviewInsert from './component/InterviewInsert';

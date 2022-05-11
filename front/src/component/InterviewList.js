@@ -77,7 +77,7 @@ class Classcomponent extends Component {
     render() {
         return (
             <Accordion defaultActiveKey="0" flush className={ ' container  py-5'}  tag ='div' >
-                <h2>{ this.state.interviewData.length > 0 ? this.props.dbinfo.titlenm + "("+ this.state.interviewData.length + ")" : this.state.message } </h2>
+                <h2 className='faq'>{ this.state.interviewData.length > 0 ? this.props.dbinfo.titlenm + "("+ this.state.interviewData.length + ")" : this.state.message } </h2>
                     {
                      this.state.interviewData.map(
                          (content,i) =>
@@ -86,10 +86,10 @@ class Classcomponent extends Component {
                                 <Accordion.Item eventKey={i.toString()} key={ content.key_id } >
                                     <Accordion.Header>
                                         <strong className='row justify-content-between align-items-center w-100'>
-                                            <span className='col-sm-9 mb-0'> { content.cyh_subject }</span>
-                                            <span className='btn interviewBtn col-sm-3  mb-0'>
-                                                <Link to={'/interviewModify/'+ content.key_id } className='modify btn btn-primary mx-1 '>M</Link> 
-                                                <a href="#" onClick={ e=>{ this.state.deleteDB(content.key_id) }}  className='delete btn btn-primary mx-1'>D</a>
+                                            <span className='faqtext col-sm-9 mb-0'> { content.cyh_subject }</span>
+                                            <span className='faqtext btn interviewBtn col-sm-3  mb-0'>
+                                                {/* <Link to={'/interviewModify/'+ content.key_id } className='modify btn btn-primary mx-1 '>M</Link> 
+                                                <a href="#" onClick={ e=>{ this.state.deleteDB(content.key_id) }}  className='delete btn btn-primary mx-1'>D</a> */}
                                             </span>                                            
                                         </strong>
                                     </Accordion.Header>

@@ -39,7 +39,7 @@ class Portfolio extends Component {
             <section id="portfolio" >
                 <div id="container">
                     <div className='row cyhpofol'>
-                        <div className="mainpo col-12 col-md-12 col-lg-3" >
+                        <div data-aos-delay="100" data-aos="fade-down" className="mainpo col-12 col-md-12 col-lg-3" >
                             <div className="grid row-6"  > 									
                                 <div class="grid-item2 " >										
                                     <h1 className="hashtag">
@@ -60,7 +60,7 @@ class Portfolio extends Component {
                             </div>
                         </div>
 
-                        <div className="mainpo col-12 col-md-12 col-lg-3" >
+                        <div data-aos-delay="200" data-aos="fade-down" className="mainpo col-12 col-md-12 col-lg-3" >
                             <div className='grid row-6' >
                                 <div className="grid-item1" >	
                                     <div className="bootstrap  d-flex ">
@@ -81,7 +81,7 @@ class Portfolio extends Component {
                                     </div>
                                 </div>    
                             </div>
-                            <div className='gridmy row-6' >
+                            <div className='gridmy row-6 py-4' >
                                 <div className="grid-item3 " >										
                                     <h1 className="hashtag">
                                         <span>반응형 웹앱 페이지</span>
@@ -89,14 +89,17 @@ class Portfolio extends Component {
                                     <div className="content">
                                         <img className='img-fluid' src='img/publishe.png' alt='' />
                                     </div>
+                                    <div className="sitebt">
+                                        <a href='https://ys5328.cafe24.com/publishe' target="_blank">사이트 보러가기</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="mainpo col-12 col-md-12 col-lg-3" >
+                        <div data-aos-delay="300" data-aos="fade-down" className="mainpo col-12 col-md-12 col-lg-3" >
                             <div className='grid row-6' >
                                 <div className="grid-item " >										
-                                    <div class="content">
+                                    <div className="content">
                                         <div className='youngimg' onClick={this.modalFn}/>
                                     </div>
                                     <h3 className="hashtag1">
@@ -104,7 +107,7 @@ class Portfolio extends Component {
                                     </h3>
                                     <div className="young_txt">
                                     <strong>Front-End Developer 차영현</strong>입니다. 좋아하는 것을 직업으로 삼고 잘하기 위해 끊임없이 노력하며, 빠른 변화를 두려워하지 않고 준비된 자세로 나아가고 있습니다.
-                                    많은 사람들과 소통하고 긍적적인 에너지를 주는 개발자로로 성장하고 싶습니다.
+                                    많은 사람들과 소통하고 긍적적인 에너지를 주는 개발자로 성장하고 싶습니다.
                                     </div>
                                     <div className="young_link text-center" onClick="event.stopPropagation()">
                                         <a href="https://www.naver.com" target="_blank"><img src="/img/Tstroy.jpg" alt="" onClick="baby" /></a>
@@ -115,24 +118,23 @@ class Portfolio extends Component {
                             </div>
                         </div>
 
-                        <div className="mainpo col-12 col-md-12 col-lg-3">
+                        <div data-aos-delay="400" data-aos="fade-down" className="mainpo col-12 col-md-12 col-lg-3">
                             <div className='grid row-6' >
-                                <div className="grid-item4 " >										
-                                    <h1 className="hashtag">
-                                        <span>#부트스트랩</span><span>#반응형웹</span><span>그누보드 연동</span>
-                                    </h1>
+                                {/* <div className="grid-item4 " >										
+                                    <div className='qna text-center'>
+                                        <p>FAQ</p>
+                                    </div>
                                     <div className="content">
                                         <img src='' alt='바디프랜드' />
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                             <div className='gridmy row-6' onClick={this.madalinterview}>
-                                <div className="grid-item4 " >										
-                                    <h1 className="hashtag">
-                                        <span>인터뷰</span>
-                                    </h1>
-                                    <div className="content">
-                                    </div>
+                                <div className="grid-item4 ">										
+                                    <div className='qna text-center'>
+                                        <p>FAQ</p>
+                                    </div>  
+                                    <div className="content"></div>
                                 </div>
                             </div>
                         </div>
@@ -289,7 +291,7 @@ class Portfolio extends Component {
                                         </div>
                                         <div className='container'>
                                         <InterviewList dbinfo={ {         
-                                            titlenm : '아마존 인터뷰목록', 
+                                            titlenm : 'FAQ', 
                                             botable : 'interviewList',
                                             crud : 'select',
                                             mapper : 'introduceSQL',
@@ -299,7 +301,7 @@ class Portfolio extends Component {
                                          </InterviewList>                                          
                                         <Routes>
                                             <Route path='/' element={<InterviewInsert dbinfo={ {         
-                                                titlenm : '리액트스트랩 모듈로 만든 폼 아마존과연동', 
+                                                titlenm : '인터뷰(아마존 AWS DB연동)', 
                                                 botable : 'interviewWrite',
                                                 crud : 'insert',
                                                 mapper : 'introduceSQL',

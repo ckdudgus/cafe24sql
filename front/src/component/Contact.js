@@ -4,7 +4,7 @@ class Contact extends Component {
     render() {
         return (
             <section>
-                <div id="maincontact">
+                <div data-aos-delay="100" data-aos="zoom-in" id="maincontact">
                     <div className="contacttitle">
                         <h><strong>Contact Me</strong></h>
                     </div>
@@ -46,31 +46,8 @@ class Contact extends Component {
                                         </li>
                                     </ul>
                                 </li>
-                                {/* <li className="hopetext">
-                                    <div className="title">
-                                        <strong>희망업무 능력순위</strong><span>(포지션이 퍼블리셔인 경우에만 포함됨)</span>
-                                    </div>
-                                    <ul className="hopeability">
-                                        <li>
-                                            <input type="text" maxlength="5" size="1"name="ability[0]" id="ability1" />
-                                            <label for="ability1">html/css</label>
-                                        </li>
-                                        <li>
-                                            <input type="text" maxlength="5" size="1" name="ability[1]" id="ability2" />
-                                            <label for="ability2">jQuery</label>
-                                        </li>
-                                        <li>
-                                            <input type="text" maxlength="5" size="1" name="ability[2]" id="ability3" />
-                                            <label for="ability3">Node&mySql</label>
-                                        </li>
-                                        <li>
-                                            <input type="text" maxlength="5" size="1" name="ability[3]" id="ability4" />
-                                            <label for="ability4">React</label>
-                                        </li>
-                                    </ul>
-                                </li> */}
                                 <li>
-                                <label for="etc">추가메세지</label>
+                                    <label for="etc">추가메세지</label>
                                     <textarea name="etc" id="etc" cols="30" rows="10"></textarea>    
                                 </li>
 

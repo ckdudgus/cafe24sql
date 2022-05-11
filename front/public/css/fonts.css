@@ -23,3 +23,10 @@
     font-weight: bold;
     src: url(../fonts/DoHyeon-Regular.woff) format("woff"),
 }
+
+@font-face {
+  font-family: 'NotoSansKR-Light';
+  src: url('/common/fonts/NotoSansKR-Light.otf') ;
+  font-weight: normal;
+  font-style: normal;
+}

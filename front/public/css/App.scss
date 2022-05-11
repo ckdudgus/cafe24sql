@@ -100,7 +100,7 @@ body{
 /*quick*/
 #quick {
   position: fixed;
-  right: -49px;
+  right: -40px;
   bottom: 0;
   transform: translateY(-9%);}
   #quick li {
@@ -142,7 +142,7 @@ body{
             box-shadow: 1px 5px 5px rgb(141, 141, 141);
             padding: 7px;
             .young_link{
-              margin-top: 50px;
+              margin-top: 20px;
             }
           }
         }
@@ -150,10 +150,10 @@ body{
     }
   }
 }
-.gridmy{
-  padding-top: 20px;
+// .gridmy{
+//   padding-top: 20px;
 
-}
+// }
 .grid-item1{
   background-color: #ffffff;
   border: 2px solid #222;
@@ -181,7 +181,7 @@ body{
   background-color: #ffffff;
   border: 2px solid #222;
   border-radius: 28px;
-  height: 350px;
+  height: 344px;
   width: 350px;
   box-shadow: 1px 5px 5px rgb(141, 141, 141);
   padding: 5px;
@@ -190,7 +190,7 @@ body{
   background-color: #ffffff;
   border: 2px solid #222;
   border-radius: 28px;
-  height: 315px;
+  height: 314px;
   width: 350px;
   box-shadow: 1px 5px 5px rgb(141, 141, 141);
   padding: 5px;
@@ -293,6 +293,8 @@ span{
 }
 .young_txt{
   font-weight: lighter;
+  line-height: 2;
+  // font-family: 'NotoSansKR-Light';
 }
 h2{
   font-size: 19px;
@@ -357,6 +359,7 @@ h2{
   #modalbox{
     h2{
       font-size: 30px;
+      font-weight: bold;
     }
     span{
       font-weight: 200;
@@ -418,12 +421,7 @@ h2{
   }
 }
 
-
-
 // 폼태그
-#maincontact{
-  height: 900px;
-}
 .contacttitle{
   display: flex;
   justify-content: center;
@@ -613,4 +611,24 @@ textarea {
 }
 @keyframes progress{
     0% { width:0%; }
+}
+
+.faq{
+  border-top: 4px solid #9e73fb;
+  text-align: center;
+}
+.faqtext{
+  font-size: 15px;
+}
+.accordion-button:not(.collapsed){
+  color: #9e73fb !important;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #ffffff !important;
+}
+.accordion-button:focus {
+  z-index: 3; 
+  border-color: none !important; 
+  outline: 0; 
+  box-shadow: none !important ; 
 }

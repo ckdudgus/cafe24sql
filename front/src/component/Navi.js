@@ -16,7 +16,7 @@ class Navi extends Component {
   render() {
     return (
       <div id='navi'>
-        <nav className ="header navbar navbar-expand-md navbar-light bg-faded">
+        <nav data-aos-delay="600" data-aos="zoom-in" className ="header navbar navbar-expand-md navbar-light bg-faded">
           <div className=" cyhlogo">
             <a className="mr-auto navbar-brand" href="http://localhost:3000/"><div className='img' /></a>
             {/* <div className="collapse navbar-collapse">

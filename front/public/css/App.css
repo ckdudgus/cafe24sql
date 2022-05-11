@@ -103,7 +103,7 @@ body {
 /*quick*/
 #quick {
   position: fixed;
-  right: -49px;
+  right: -40px;
   bottom: 0;
   transform: translateY(-9%);
 }
@@ -159,11 +159,7 @@ body {
 }
 
 #portfolio #container .cyhpofol .mainpo .grid .grid-item .young_link {
-  margin-top: 50px;
-}
-
-.gridmy {
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .grid-item1 {
@@ -194,7 +190,7 @@ body {
   background-color: #ffffff;
   border: 2px solid #222;
   border-radius: 28px;
-  height: 350px;
+  height: 344px;
   width: 350px;
   box-shadow: 1px 5px 5px #8d8d8d;
   padding: 5px;
@@ -204,7 +200,7 @@ body {
   background-color: #ffffff;
   border: 2px solid #222;
   border-radius: 28px;
-  height: 315px;
+  height: 314px;
   width: 350px;
   box-shadow: 1px 5px 5px #8d8d8d;
   padding: 5px;
@@ -320,6 +316,7 @@ span {
 
 .young_txt {
   font-weight: lighter;
+  line-height: 2;
 }
 
 h2 {
@@ -363,6 +360,7 @@ h2 {
 
 #portfolio #modalbox h2 {
   font-size: 30px;
+  font-weight: bold;
 }
 
 #portfolio #modalbox span {
@@ -431,10 +429,6 @@ h2 {
 .aboutend .certificate {
   border: 2px solid #222;
   margin: 0 20px;
-}
-
-#maincontact {
-  height: 900px;
 }
 
 .contacttitle {
@@ -660,4 +654,28 @@ textarea {
   0% {
     width: 0%;
   }
+}
+
+.faq {
+  border-top: 4px solid #9e73fb;
+  text-align: center;
+}
+
+.faqtext {
+  font-size: 15px;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #9e73fb !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #ffffff !important;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: none !important;
+  outline: 0;
+  box-shadow: none !important;
 }

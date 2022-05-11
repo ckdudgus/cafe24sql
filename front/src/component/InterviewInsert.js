@@ -103,7 +103,7 @@ function InsertInterview(props){
         <Button onClick={e => { submitInterview(props.dbinfo.botable, e) }}>글쓰기</Button>
       </Form>
       
-      <p>{ message  }</p>
+      {/* <p>{ message  }</p> */}
     </div>
   )
 
