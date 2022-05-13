@@ -12,14 +12,15 @@ class Contact extends Component {
                         <h>for the culture not for benefit</h>
                     </div>
                     <div className="formmain">
-                        {/* <div className="contactimg">
-                            <img src="/front/폼태그/img/Untitled-1.jpg" alt="www" className="imgmain" />
-                        </div> */}
                         <form action="http://www.naver.com"  onsubmit="return forminspector(this)" method="post" name="contactform" id="contactform">
                             <ul className='formlabel'>
                                 <li className="labeltext">
                                     <label for="companynm" className="first_label">회사명</label>
                                     <input id="companynm" type="text" name="companynm" />
+                                </li>
+                                <li className="labeltext">
+                                    <label for="companymynm" className="first_label">성함</label>
+                                    <input id="companymynm" type="text" name="companymynm" />
                                 </li>
                                 <li className="labeltext">
                                     <label for="contactph" className="first_label">담당자 연락처</label>
@@ -48,8 +49,8 @@ class Contact extends Component {
                                             <label for="position4">기획자</label>
                                         </li>
                                     </ul>    
-                                    <label for="etc">추가메세지</label>
-                                    <textarea name="etc" id="etc" cols="30" rows="10"></textarea>
+                                    <label for="etc">메세지</label>
+                                    <textarea name="etc" id="etc" cols="30" rows="10" placeholder="메세지를 남겨주세요"></textarea>
                                 </li>
 
                                 <li  className="Agreetext">

@@ -42,12 +42,14 @@ class Portfolio extends Component {
                         <div data-aos-delay="100" data-aos="fade-down" className="mainpo col-12 col-md-12 col-lg-3" >
                             <div className="grid row-6"  > 									
                                 <div class="grid-item2 " >										
-                                    <h1 className="hashtag">
+                                    <h1 className="cafe24hos">
                                         <div className='cafe24img' />
                                         <span>Cafe24hosting</span>
                                     </h1>
                                     <div className="content">
                                         <img className='cafeimg' src='img/cafeimg.jpg' alt='바디프랜드' />
+                                    </div>
+                                    <div>
                                         <h2>#카페24 #hosting #축구용품 #쇼핑몰</h2>
                                     </div>
                                     <div className="sitebt2">
