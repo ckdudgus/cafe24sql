@@ -119,22 +119,17 @@ class Portfolio extends Component {
                         </div>
 
                         <div data-aos-delay="400" data-aos="fade-down" className="mainpo col-12 col-md-12 col-lg-3">
-                            <div className='grid row-6' >
-                                {/* <div className="grid-item4 " >										
-                                    <div className='qna text-center'>
-                                        <p>FAQ</p>
-                                    </div>
-                                    <div className="content">
-                                        <img src='' alt='바디프랜드' />
-                                    </div>
-                                </div> */}
-                            </div>
                             <div className='gridmy row-6' onClick={this.madalinterview}>
                                 <div className="grid-item4 ">										
                                     <div className='qna text-center'>
                                         <p>FAQ</p>
                                     </div>  
                                     <div className="content"></div>
+                                </div>
+                            </div>
+                            <div className='grid row-6' >
+                                <div className='formcon'>
+                                    면접제안
                                 </div>
                             </div>
                         </div>

@@ -25,7 +25,10 @@ class Contact extends Component {
                                     <label for="contactph" className="first_label">담당자 연락처</label>
                                     <input id="phonenumber" type="text" name="phonenumber"  placeholder="010-0000-0000" />
                                 </li>               
-                                <li className="potext">
+                                {/* <li className="potext">
+                                    
+                                </li> */}
+                                <li>
                                     <div className="title"><strong>포지션</strong><span>(하나만 선택해주세요)</span></div>
                                     <ul className="position">
                                         <li>
@@ -44,11 +47,9 @@ class Contact extends Component {
                                             <input type="radio" name="position" id="position4" />
                                             <label for="position4">기획자</label>
                                         </li>
-                                    </ul>
-                                </li>
-                                <li>
+                                    </ul>    
                                     <label for="etc">추가메세지</label>
-                                    <textarea name="etc" id="etc" cols="30" rows="10"></textarea>    
+                                    <textarea name="etc" id="etc" cols="30" rows="10"></textarea>
                                 </li>
 
                                 <li  className="Agreetext">
@@ -64,6 +65,7 @@ class Contact extends Component {
                             </div>
                         </form>
                     </div>
+
                 </div>
             </section>    
         );
