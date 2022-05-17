@@ -200,7 +200,6 @@ body {
   background-color: #ffffff;
   border: 2px solid #222;
   border-radius: 28px;
-  height: 314px;
   width: 350px;
   box-shadow: 1px 5px 5px #8d8d8d;
   padding: 5px;
@@ -282,12 +281,6 @@ span {
   cursor: grab;
 }
 
-.cafeimg {
-  width: 50%;
-  float: right;
-  margin-bottom: -15px;
-}
-
 .cafe24img {
   margin-right: 15px;
 }
@@ -298,7 +291,7 @@ span {
 }
 
 .hashtag span {
-  font-size: 1.4rem;
+  font-size: 19px;
   font-weight: bold;
 }
 
@@ -345,9 +338,7 @@ h2 {
 
 .footer p {
   text-align: center;
-  padding: 15px 0;
   color: black;
-  margin-top: 25px;
 }
 
 #modalbox .about img {
@@ -551,6 +542,7 @@ textarea {
   border: 2px solid #ccc;
   resize: none;
   font-size: 19px;
+  margin-left: 15px;
 }
 
 .Agreetext {

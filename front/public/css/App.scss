@@ -190,7 +190,7 @@ body{
   background-color: #ffffff;
   border: 2px solid #222;
   border-radius: 28px;
-  height: 314px;
+  // height: 314px;
   width: 350px;
   box-shadow: 1px 5px 5px rgb(141, 141, 141);
   padding: 5px;
@@ -264,11 +264,7 @@ span{
   border-radius: 18px;
   cursor: grab;
 }
-.cafeimg{
-  width: 50%;
-  float: right;
-  margin-bottom: -15px;
-}
+
 .cafe24img{
   margin-right: 15px;
 }
@@ -276,7 +272,7 @@ span{
   letter-spacing: -2px;
   text-align: center;
   span{
-    font-size: 1.4rem;
+    font-size: 19px;
     font-weight: bold;
   }
 }
@@ -318,9 +314,7 @@ h2{
   background-color: rgb(255, 255, 255);
   p{
     text-align: center;
-    padding: 15px 0;
     color: rgb(0, 0, 0);
-    margin-top: 25px;
   }
 }
 #modalbox{
@@ -499,6 +493,7 @@ textarea {
   border: 2px solid #ccc;
   resize: none;
   font-size: 19px;
+  margin-left: 15px;
 }
 
 .Agreetext{

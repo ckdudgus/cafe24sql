@@ -8,7 +8,7 @@ import React from 'react';
 import Navi from './component/Navi';
 import Portfolio from './component/Portfolio'
 import Footer from './component/Footer';
-import Contact from './component/Contact';
+// import Contact from './component/Contact';
 import Quick from './component/Quick';
 
 
@@ -17,7 +17,7 @@ function App() {
     <div className='App'>
     <Navi></Navi>
     <Portfolio></Portfolio>
-    <Contact></Contact>
+    {/* <Contact></Contact> */}
     <Footer ></Footer>   
     <Quick></Quick>
     </div>

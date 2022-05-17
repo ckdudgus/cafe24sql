@@ -25,6 +25,11 @@ class Portfolio extends Component {
             modalOnooff: !prevState.modalOnooff
         }))
     }
+    madalcontact=()=>{   
+        this.setState((prevState)=>({
+            modalOnoooff: !prevState.modalOnoooff
+        }))
+    }
 
     componentDidMount() {
         setTimeout(() => {
@@ -42,22 +47,22 @@ class Portfolio extends Component {
                         <div data-aos-delay="100" data-aos="fade-down" className="mainpo col-12 col-md-12 col-lg-3" >
                             <div className="grid row-6"  > 									
                                 <div class="grid-item2 " >										
-                                    <h1 className="cafe24hos">
-                                        <div className='cafe24img' />
-                                        <span>Cafe24hosting</span>
-                                    </h1>
-                                    <div className="content">
-                                        <img className='cafeimg' src='img/cafeimg.jpg' alt='바디프랜드' />
+                                    <div className='cafe24img' />
+                                    <div className='bootspan text-center'>
+                                        <span>Cafe24EChosting</span>
+                                    </div>
+                                    <div className="content mt-2">
+                                        <img className='cafeimg img-fluid' src='img/cafeshop.png' alt='바디프랜드' />
                                     </div>
                                     <div>
-                                        <h2>#카페24 #hosting #축구용품 #쇼핑몰</h2>
+                                        <h2><strong>#</strong>카페24 <strong>#</strong>hosting <strong>#</strong>축구용품 <strong>#</strong>쇼핑몰</h2>
                                     </div>
                                     <div className="sitebt2">
                                         <a href='https://ksh2012129.cafe24.com' target="_blank">사이트 보러가기</a>
                                     </div>
-                                    <div className="grid1img">
+                                    {/* <div className="grid1img">
                                         <img className='img-fluid' src='img/grid1img.jpg' alt=''/>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>
@@ -76,7 +81,7 @@ class Portfolio extends Component {
                                         <div className='bodyfriend' alt='바디프랜드' />
                                     </div>
                                     <h1 className="hashtag">
-                                        <span className='gnuboard'>#부트스트랩</span><span>#반응형웹</span><span>그누보드 연동</span>
+                                        <h2 className='gnuboard'><strong>#</strong>부트스트랩 <strong>#</strong>반응형웹 <strong>#</strong>그누보드 연동</h2>
                                     </h1>
                                     <div className="sitebt">
                                         <a href='https://ys5328.cafe24.com/bodyfriend' target="_blank">사이트 보러가기</a>
@@ -85,9 +90,9 @@ class Portfolio extends Component {
                             </div>
                             <div className='gridmy row-6 py-4' >
                                 <div className="grid-item3 " >										
-                                    <h1 className="hashtag">
+                                    <div className="hashtag">
                                         <span>반응형 웹앱 페이지</span>
-                                    </h1>
+                                    </div>
                                     <div className="content">
                                         <img className='img-fluid' src='img/publishe.png' alt='' />
                                     </div>
@@ -105,7 +110,7 @@ class Portfolio extends Component {
                                         <div className='youngimg' onClick={this.modalFn}/>
                                     </div>
                                     <h3 className="hashtag1">
-                                        <span>#긍정적인</span><span>#소통</span><span>#피드백</span><span>#환영</span>
+                                        <span><strong>#</strong>긍정적인</span><span><strong>#</strong>소통</span><span><strong>#</strong>피드백</span><span><strong>#</strong>환영</span>
                                     </h3>
                                     <div className="young_txt">
                                     <strong>Front-End Developer 차영현</strong>입니다. 좋아하는 것을 직업으로 삼고 잘하기 위해 끊임없이 노력하며, 빠른 변화를 두려워하지 않고 준비된 자세로 나아가고 있습니다.
@@ -121,17 +126,18 @@ class Portfolio extends Component {
                         </div>
 
                         <div data-aos-delay="400" data-aos="fade-down" className="mainpo col-12 col-md-12 col-lg-3">
-                            <div className='gridmy row-6' onClick={this.madalinterview}>
-                                <div className="grid-item4 ">										
+                            <div className='gridmy row-6' >
+                                <div className="grid-item4" onClick={this.madalinterview}>										
                                     <div className='qna text-center'>
-                                        <p>FAQ</p>
+                                        <p className='mb-0'><strong>FAQ</strong></p>
                                     </div>  
-                                    <div className="content"></div>
                                 </div>
                             </div>
-                            <div className='grid row-6' >
-                                <div className='formcon'>
-                                    면접제안
+                            <div className='gridmy row-6'>
+                                <div className="grid-item4 mt-5" onClick={this.madalcontact}>										
+                                    <div className='qna text-center'>
+                                        <p className='mb-0'><strong>Contact Me</strong></p>
+                                    </div>  
                                 </div>
                             </div>
                         </div>
@@ -321,6 +327,71 @@ class Portfolio extends Component {
                         </div>
                     </div>
                 </div>    
+                : ''}
+                {this.state.modalOnoooff ?
+                <div data-aos-delay="100" data-aos="zoom-in" id="maincontact">
+                    <div className="contacttitle">
+                        <h><strong>Contact Me</strong></h>
+                    </div>
+                    <div className="subtitle">
+                        <h>for the culture not for benefit</h>
+                    </div>
+                    <div className="formmain">
+                        <form action="http://www.naver.com"  onsubmit="return forminspector(this)" method="post" name="contactform" id="contactform">
+                            <ul className='formlabel'>
+                                <li className="labeltext">
+                                    <label for="companynm" className="first_label">회사명</label>
+                                    <input id="companynm" type="text" name="companynm" />
+                                </li>
+                                <li className="labeltext">
+                                    <label for="companymynm" className="first_label">성함</label>
+                                    <input id="companymynm" type="text" name="companymynm" />
+                                </li>
+                                <li className="labeltext">
+                                    <label for="contactph" className="first_label">담당자 연락처</label>
+                                    <input id="phonenumber" type="text" name="phonenumber"  placeholder="010-0000-0000" />
+                                </li>               
+                                {/* <li className="potext">
+                                    
+                                </li> */}
+                                <li>
+                                    <div className="title"><strong>포지션</strong><span>(하나만 선택해주세요)</span></div>
+                                    <ul className="position">
+                                        <li>
+                                            <input type="radio" name="position" id="position1" />
+                                            <label for="position1">프론트엔드</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="position" id="position2" />
+                                            <label for="position2">웹퍼블리셔</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="position" id="position3" />
+                                            <label for="position3">디자인</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="position" id="position4" />
+                                            <label for="position4">기획자</label>
+                                        </li>
+                                    </ul>    
+                                    <label for="etc">메세지</label>
+                                    <textarea name="etc" id="etc" cols="30" rows="10" placeholder="메세지를 남겨주세요"></textarea>
+                                </li>
+
+                                <li  className="Agreetext">
+                                    <label className="checkbox" for="allCheck">
+                                        <input type="checkbox" name="agree" className="checkAll" data-group="cg1" id="allCheck" />
+                                        <i></i>
+                                        <span>개인정보 수집이용 동의</span>
+                                    </label>
+                                </li>
+                            </ul>
+                            <div className="form-submit-btn">
+                                <input className="submit" type="submit" value="제안하기" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
                 : ''}
             </section>
             
